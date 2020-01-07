@@ -1,0 +1,54 @@
+// <copyright file="accordion.component.scss" company="API Healthcare">
+// Copyright © 2019 API Healthcare Corporation.  All rights reserved.  Confidential and Proprietary.
+// </copyright>
+
+@import "../../../styles/colors";
+@import "../../../styles/typography";
+
+.chevron_down {
+  float: right;
+  font-size: 0.7rem;
+  padding-top: 6px;
+}
+
+.chevron_up {
+  float: right;
+  font-size: 0.6rem;
+  padding-top: 3px;
+}
+
+.acc_panel {
+  margin-bottom: 5px;
+
+  .acc_header {
+    padding: 9px 20px 9px 20px;
+    height: auto;
+    cursor: pointer;
+    color: $default-light;
+    font-size: $headings-size-small;
+    font-weight: 400;
+    background: $primary-dark-95;
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.2;
+
+    .acc_title {
+      max-width: 95%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .acc_body {
+    color: $default-light;
+    background-color: $primary-dark-95;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: $headings-size-small;
+  }
+}
+
+*[tabindex] {
+  border-color: $primary-dark-95;
+}
